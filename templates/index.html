@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froyo Agent OS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+        }
+        
+        /* Custom Scrollbar for the chat and catalog areas */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05); 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2); 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3); 
+        }
+
+        /* Glassmorphism utilities */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Typing indicator animation */
+        .typing-dot {
+            animation: typing 1.4s infinite ease-in-out both;
+        }
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        
+        @keyframes typing {
+            0%, 80%, 100% { transform: scale(0); opacity: 0.5; }
+            40% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Markdown styling for agent responses */
+        .prose strong { color: #c084fc; font-weight: 600; }
+        .prose ul { list-style-type: disc; margin-left: 1.5rem; margin-top: 0.5rem; }
+    </style>
+</head>
+<body class="h-screen w-full flex items-center justify-center p-4 sm:p-8">
+
+    <div class="max-w-[1400px] w-full h-full max-h-[900px] flex flex-col lg:flex-row gap-6">
+        
+        <!-- Sidebar / System Status -->
+        <aside class="w-full lg:w-72 xl:w-80 glass-panel rounded-2xl p-6 flex flex-col gap-6 shrink-0 shadow-2xl">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-purple-600 to-blue-500 flex items-center justify-center shadow-lg shadow-purple-500/30">
+                    <i class="fa-solid fa-ice-cream text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-300">FroyoOS Agent</h1>
+                    <p class="text-xs text-slate-400 font-medium tracking-wide uppercase">Store Manager Portal</p>
+                </div>
+            </div>
+
+            <div class="h-px w-full bg-slate-700/50"></div>
+
+            <div class="flex flex-col gap-4 flex-1">
+                <h2 class="text-sm font-semibold text-slate-300 uppercase tracking-wider">System Status</h2>
+                
+                <div class="flex items-center justify-between p-3 rounded-lg bg-slate-800/50 border border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-brain text-purple-400"></i>
+                        <span class="text-sm font-medium">Gemini Engine</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_8px_#4ade80]"></span>
+                        <span class="text-xs text-green-400">Active</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-3 rounded-lg bg-slate-800/50 border border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-database text-blue-400"></i>
+                        <span class="text-sm font-medium">AlloyDB Fed.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_8px_#4ade80]"></span>
+                        <span class="text-xs text-green-400">Connected</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between p-3 rounded-lg bg-slate-800/50 border border-slate-700/50">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-toolbox text-orange-400"></i>
+                        <span class="text-sm font-medium">MCP Toolbox</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_8px_#4ade80]"></span>
+                        <span class="text-xs text-green-400">Deployed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-auto pt-4 border-t border-slate-700/50">
+                <p class="text-xs text-slate-500 text-center">Agentic Data Cloud Demo &copy; 2026</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="flex-1 glass-panel rounded-2xl shadow-2xl flex flex-col overflow-hidden relative border-t border-l border-white/10">
+            
+            <!-- Chat Header -->
+            <header class="p-5 border-b border-slate-700/50 flex justify-between items-center bg-slate-800/30">
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <i class="fa-solid fa-robot text-2xl text-purple-400"></i>
+                        <div class="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 border-2 border-slate-900 rounded-full"></div>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-slate-200">Store Operations Agent</h2>
+                        <p class="text-xs text-slate-400">Ready to query live orders and data warehouse</p>
+                    </div>
+                </div>
+                <button onclick="clearChat()" class="text-slate-400 hover:text-white transition-colors" title="Clear Chat">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </header>
+
+            <!-- Chat Messages -->
+            <div id="chat-container" class="flex-1 overflow-y-auto p-6 flex flex-col gap-6 scroll-smooth">
+                <!-- Welcome Message -->
+                <div class="flex gap-4 items-start max-w-[85%]">
+                    <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center shrink-0 shadow-lg">
+                        <i class="fa-solid fa-robot text-sm"></i>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 rounded-2xl rounded-tl-sm px-5 py-3.5 text-sm text-slate-200 shadow-md">
+                        Hello! I am your Froyo Store Manager Assistant. I am connected to our local AlloyDB transactional tables and federated BigQuery warehouse via the MCP Toolbox.
+                        <br><br>
+                        You can ask me to check order statuses, verify allergens, or look up supplier details. How can I help you today?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-4 bg-slate-800/50 border-t border-slate-700/50 backdrop-blur-md">
+                
+                <!-- Thinking Indicator (Hidden by default) -->
+                <div id="thinking-indicator" class="hidden items-center gap-3 px-4 pb-3 text-sm text-purple-400">
+                    <div class="flex gap-1">
+                        <div class="w-2 h-2 rounded-full bg-purple-400 typing-dot"></div>
+                        <div class="w-2 h-2 rounded-full bg-purple-400 typing-dot"></div>
+                        <div class="w-2 h-2 rounded-full bg-purple-400 typing-dot"></div>
+                    </div>
+                    <span>Agent is orchestrating tools & querying database...</span>
+                </div>
+
+                <form id="chat-form" class="relative flex items-center" onsubmit="handleSend(event)">
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        class="w-full bg-slate-900/50 border border-slate-600 text-white text-sm rounded-full pl-5 pr-14 py-3.5 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all placeholder-slate-500 shadow-inner"
+                        placeholder="e.g. Can you check Alice's order and check for dairy?"
+                        autocomplete="off"
+                        required
+                    >
+                    <button 
+                        type="submit" 
+                        id="send-btn"
+                        class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white rounded-full transition-all shadow-md transform active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <i class="fa-solid fa-paper-plane text-sm translate-x-[-1px] translate-y-[1px]"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <!-- Right Sidebar / Froyo Catalog -->
+        <aside class="w-full lg:w-72 xl:w-80 glass-panel rounded-2xl flex flex-col overflow-hidden shrink-0 shadow-2xl border-t border-l border-white/10">
+            <div class="p-5 border-b border-slate-700/50 bg-slate-800/30 flex justify-between items-center shrink-0">
+                <h2 class="font-semibold text-slate-200 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open text-blue-400"></i>
+                    Product Catalog
+                </h2>
+                <span class="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded-full border border-blue-500/30">Live Data</span>
+            </div>
+            
+            <div class="flex-1 overflow-y-auto p-4 flex flex-col gap-3 scroll-smooth">
+                
+                <!-- List Item 1 -->
+                <div class="bg-slate-800/60 border border-slate-700 rounded-xl overflow-hidden hover:border-purple-500/50 hover:bg-slate-800/80 transition-all group cursor-pointer flex items-center p-2.5 gap-4" onclick="document.getElementById('user-input').value='Can you check allergens for Midnight Swirl?'; document.getElementById('user-input').focus();">
+                    <div class="h-14 w-14 rounded-lg overflow-hidden relative shrink-0 shadow-md">
+                        <img src="https://placehold.co/150x150/1e1b4b/c084fc?text=MS" alt="Midnight Swirl" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h3 class="font-semibold text-sm text-slate-200 group-hover:text-purple-300 transition-colors line-clamp-1">Midnight Swirl</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">Item #001</p>
+                    </div>
+                    <div class="pr-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- List Item 2 -->
+                <div class="bg-slate-800/60 border border-slate-700 rounded-xl overflow-hidden hover:border-purple-500/50 hover:bg-slate-800/80 transition-all group cursor-pointer flex items-center p-2.5 gap-4" onclick="document.getElementById('user-input').value='Does Volcanic Guava Burst have allergens?'; document.getElementById('user-input').focus();">
+                    <div class="h-14 w-14 rounded-lg overflow-hidden relative shrink-0 shadow-md">
+                        <img src="https://placehold.co/150x150/4c1d95/f472b6?text=VG" alt="Volcanic Guava Burst" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h3 class="font-semibold text-sm text-slate-200 group-hover:text-purple-300 transition-colors line-clamp-1">Volcanic Guava Burst</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">Item #002</p>
+                    </div>
+                    <div class="pr-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- List Item 3 -->
+                <div class="bg-slate-800/60 border border-slate-700 rounded-xl overflow-hidden hover:border-purple-500/50 hover:bg-slate-800/80 transition-all group cursor-pointer flex items-center p-2.5 gap-4" onclick="document.getElementById('user-input').value='Does Infra Vanilla Flash have any allergens?'; document.getElementById('user-input').focus();">
+                    <div class="h-14 w-14 rounded-lg overflow-hidden relative shrink-0 shadow-md">
+                        <img src="https://placehold.co/150x150/0f172a/38bdf8?text=IV" alt="Infra Vanilla Flash" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h3 class="font-semibold text-sm text-slate-200 group-hover:text-purple-300 transition-colors line-clamp-1">Infra Vanilla Flash</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">Item #003</p>
+                    </div>
+                    <div class="pr-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- List Item 4 -->
+                <div class="bg-slate-800/60 border border-slate-700 rounded-xl overflow-hidden hover:border-purple-500/50 hover:bg-slate-800/80 transition-all group cursor-pointer flex items-center p-2.5 gap-4" onclick="document.getElementById('user-input').value='Does Radiant Dragonfruit Halo have any allergen?'; document.getElementById('user-input').focus();">
+                    <div class="h-14 w-14 rounded-lg overflow-hidden relative shrink-0 shadow-md">
+                        <img src="https://placehold.co/150x150/14532d/fef08a?text=RD" alt="Radiant Dragonfruit Halo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h3 class="font-semibold text-sm text-slate-200 group-hover:text-purple-300 transition-colors line-clamp-1">Radiant Dragonfruit Halo</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">Item #004</p>
+                    </div>
+                    <div class="pr-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i>
+                    </div>
+                </div>
+                
+                <!-- List Item 5 -->
+                <div class="bg-slate-800/60 border border-slate-700 rounded-xl overflow-hidden hover:border-purple-500/50 hover:bg-slate-800/80 transition-all group cursor-pointer flex items-center p-2.5 gap-4" onclick="document.getElementById('user-input').value='Does Frozen Caramel Impact have any allergen?'; document.getElementById('user-input').focus();">
+                    <div class="h-14 w-14 rounded-lg overflow-hidden relative shrink-0 shadow-md">
+                        <img src="https://placehold.co/150x150/78350f/fdba74?text=FC" alt="Frozen Caramel Impact" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h3 class="font-semibold text-sm text-slate-200 group-hover:text-purple-300 transition-colors line-clamp-1">Frozen Caramel Impact</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">Item #005</p>
+                    </div>
+                    <div class="pr-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const chatForm = document.getElementById('chat-form');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const thinkingIndicator = document.getElementById('thinking-indicator');
+
+        // Initial empty chat state save
+        const initialHTML = chatContainer.innerHTML;
+
+        async function handleSend(e) {
+            e.preventDefault();
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            // 1. Append User Message
+            appendMessage('user', message);
+            userInput.value = '';
+            
+            // 2. Show Loading State
+            setLoading(true);
+
+            try {
+                // 3. Call the Flask Backend
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+
+                if (!response.ok) throw new Error('Network response was not ok');
+                
+                const data = await response.json();
+                
+                // 4. Hide Loading & Append Agent Message
+                setLoading(false);
+                appendMessage('agent', data.agent_reply);
+
+            } catch (error) {
+                console.error("Error communicating with agent:", error);
+                setLoading(false);
+                appendMessage('system', "Connection error: Failed to reach the Agentic Backend. Ensure Flask is running.");
+            }
+        }
+
+        function appendMessage(sender, text) {
+            const msgDiv = document.createElement('div');
+            
+            if (sender === 'user') {
+                msgDiv.className = 'flex gap-4 items-start max-w-[85%] self-end flex-row-reverse';
+                msgDiv.innerHTML = `
+                    <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center shrink-0 shadow-lg border border-slate-600">
+                        <i class="fa-solid fa-user text-sm text-slate-300"></i>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-2xl rounded-tr-sm px-5 py-3.5 text-sm text-white shadow-md leading-relaxed">
+                        ${escapeHTML(text)}
+                    </div>
+                `;
+            } else if (sender === 'agent') {
+                msgDiv.className = 'flex gap-4 items-start max-w-[85%]';
+                // Basic markdown formatting (bolding)
+                const formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+                msgDiv.innerHTML = `
+                    <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center shrink-0 shadow-lg relative">
+                        <i class="fa-solid fa-robot text-sm"></i>
+                    </div>
+                    <div class="prose prose-invert bg-slate-800 border border-slate-700 rounded-2xl rounded-tl-sm px-5 py-3.5 text-sm text-slate-200 shadow-md leading-relaxed">
+                        ${formattedText}
+                    </div>
+                `;
+            } else {
+                // Error/System message
+                msgDiv.className = 'flex gap-4 items-center justify-center w-full my-2';
+                msgDiv.innerHTML = `
+                    <div class="px-4 py-2 bg-red-900/40 border border-red-500/50 text-red-300 text-xs rounded-full flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        ${escapeHTML(text)}
+                    </div>
+                `;
+            }
+
+            chatContainer.appendChild(msgDiv);
+            scrollToBottom();
+        }
+
+        function setLoading(isLoading) {
+            if (isLoading) {
+                thinkingIndicator.classList.remove('hidden');
+                thinkingIndicator.classList.add('flex');
+                userInput.disabled = true;
+                sendBtn.disabled = true;
+                scrollToBottom();
+            } else {
+                thinkingIndicator.classList.add('hidden');
+                thinkingIndicator.classList.remove('flex');
+                userInput.disabled = false;
+                sendBtn.disabled = false;
+                userInput.focus();
+            }
+        }
+
+        function scrollToBottom() {
+            chatContainer.scrollTo({
+                top: chatContainer.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        function clearChat() {
+            chatContainer.innerHTML = initialHTML;
+        }
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag])
+            );
+        }
+    </script>
+</body>
+</html>
