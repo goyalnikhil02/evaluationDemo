@@ -1,0 +1,236 @@
+supplier_id,supplier_name,production_site_id,facility_grade
+VND-312,SouthCrest Botanical Sourcing,FAC-312-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-01,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-01,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-01,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-01,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-01,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-02,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-01,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-001,Antigravity Global Sourcing,FAC-001-02,SQF Level 3 Certified
+VND-444,Emerald Valley Chemical,FAC-444-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-550,Atlantic Marine Extracts,FAC-550-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-02,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-02,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical Sourcing,FAC-312-02,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-917,Zenith Natural Solutions,FAC-917-01,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-312,SouthCrest Botanical,FAC-312-02,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-02,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-888,Titan Industrial Nutrients,FAC-888-01,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-02,SQF Level 3 Certified
+VND-702,Golden Grain Refining,FAC-702-01,SQF Level 3 Certified
+VND-618,Prestige Molecular Additives,FAC-618-01,SQF Level 3 Certified
+VND-205,NorthStar Ingredients Corp,FAC-205-01,SQF Level 3 Certified
+VND-101,Apex Bio-Organic Logistics,FAC-101-01,SQF Level 3 Certified
+,Antigravity CPG Solutions,,
+,Antigravity CPG Solutions,,
+,Antigravity CPG Solutions,,
+,Antigravity CPG Solutions,,
+quantum,Quantum,,
+plasma,Plasma,,
+vortex,Vortex,,
+cyber,Cyber,,
+asteroid,Asteroid,,
+pulsar,Pulsar,,
+nebula,Nebula,,
+galactic,Galactic,,
+Zenith,Zenith,,
+Hyper,Hyper,,
+Aura,Aura,,
+Asteroid,Asteroid,,
+Plasma,Plasma,,
+Galactic,Galactic,,
+Neuro-Matrix,Neuro-Matrix,,
+Pulsar,Pulsar,,
+,ANTIGRAVITY CPG SOLUTIONS,,
+,Aura,,
+,Zenith,,
+,Cosmic,,
+,Pulsar,,
+,Krypto,,
+,Nebula,,
+,Neuro-Matrix,,
+SUP-ZENITH,Zenith,,
+SUP-PLASMA,Plasma,,
+SUP-AURA,Aura,,
+SUP-NEUROMATRIX,Neuro-Matrix,,
+SUP-CYBERFLUX,Cyber-Flux,,
+SUP-HYPER,Hyper,,
+SUP-PULSAR,Pulsar,,

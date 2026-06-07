@@ -1,0 +1,224 @@
+ingredient_id,allergen_name
+1453-22-3,Eggs
+7214-37-3,Milk
+6405-50-5,Soy
+7916-73-1,Fish
+7056-05-4,Peanuts
+9357-14-5,Peanuts
+5380-04-1,Fish
+9560-81-1,Gluten
+4551-50-6,Tree Nuts
+3575-60-8,Wheat
+3575-60-8,Gluten
+6997-91-2,Milk
+6250-94-9,Soy
+4137-19-0,Gluten
+5347-32-1,Sesame
+7917-04-3,Gluten
+1251-52-4,Peanuts
+7155-97-5,Soy
+0450-39-5,Soy
+3588-14-1,Soy
+1106-85-9,Wheat
+1106-85-9,Gluten
+6044-52-0,Gluten
+5242-85-7,Gluten
+3330-65-9,Tree Nuts
+4913-76-9,Gluten
+4543-14-5,Sesame
+1376-01-4,Tree Nuts
+8042-59-2,Peanuts
+9285-87-6,Milk
+2150-18-9,Tree Nuts
+3043-00-6,Tree Nuts
+3099-17-6,Soy
+7173-08-2,Soy
+6477-87-4,Milk
+5396-94-0,Eggs
+1206-83-8,Wheat
+1206-83-8,Gluten
+2099-57-7,Tree Nuts
+8365-09-5,Crustacean
+6060-06-2,Crustacean
+5719-45-6,Tree Nuts
+3466-69-0,Soy
+0371-25-7,Soy
+5522-46-5,Tree Nuts
+7774-96-3,Tree Nuts
+7460-10-6,Tree Nuts
+0755-83-9,Tree Nuts
+8673-58-7,Tree Nuts
+4649-12-5,Tree Nuts
+4478-09-2,Peanuts
+3849-91-4,Tree Nuts
+9412-78-0,Soy
+8412-22-9,Gluten
+8924-30-0,Tree Nuts
+VOR-SOY-EXT,Soy
+COM-ALM-POW,Tree Nuts
+Asteroid Whey Protein,Milk
+PLASMA_PISTACHIO_POWDER,Tree Nuts
+HYPER_WHEY_ISOLATE,Milk
+ING-GLACIAL-SOY-GUM,Soy
+ING-STELLAR-PEANUT-CONCENTRATE,Peanuts
+ING-PULSAR-ALMOND,Tree Nuts
+ING-OPAL-WHEY,Milk
+VOL-SOY-ISO,Soy
+volcanic_peanut_protein,Peanut
+vortex_pistachio_concentrate,Pistachio
+Pulsar Sesame Lecithin,Sesame
+CAS-VORTEX-PISTACHIO,Tree Nuts
+CAS-COMET-ALMOND,Tree Nuts
+CAS-ASTEROID-WHEY,Milk
+Comet Almond Powder,Almond
+martian-soy-powder,Soy
+hyper-whey-isolate,Milk
+plasma-almond-extract,Tree Nuts
+martian-barley-powder,Gluten
+Vortex Soy Isolate,Soy
+CAS-STELLAR-SOY,Soy
+CAS-MARTIAN-ALMOND,Almond
+CAS-ASTEROID-WHEY,Milk
+ING-PULSAR-WHEAT-ISOLATE,Wheat
+ING-PLASMA-CASHEW-CONCENTRATE,Tree Nuts
+lunar_sesame_oil,Sesame
+nebula_almond_extract,Tree Nuts
+Cyber Soy Protein,Soy
+Asteroid Whey Protein,Milk
+ING-STELLAR-CASHEW-PROTEIN,Cashew
+ING-STELLAR-PEANUT-CONCENTRATE,Peanut
+Plasma Almond Extract,Tree Nut
+Vortex Soy Extract,Soy
+PLASMA-CASHEW-CONCENTRATE,Cashew
+PULSAR-WHEAT-ISOLATE,Wheat
+hyper-cashew-powder,Tree Nuts
+Opal Whey Powder,Milk
+Galactic Soy Isolate,Soy
+Martian Egg Isolate,Egg
+galactic_soy_isolate,Soy
+hyper_whey_isolate,Milk
+aura_peanut_powder,Peanuts
+ING-ZENITH-CASHEW-PROTEIN,Cashew
+ING-MARTIAN-PEANUT-LECITHIN,Peanut
+pulsar-wheat-isolate,Wheat
+quantum_soy_protein,Soy
+volcanic_peanut_protein,Peanut
+vortex_soy_isolate,Soy
+Volcanic Soy Isolate,Soy
+cosmic-whey-extract,Milk
+Glacial-Almond-Powder,Almond
+Cyber-Soy-Protein,Soy
+ASTEROID-WHEY-PROTEIN,Milk
+MARTIAN-OAT-EXTRACT,Gluten
+HYPER-WHEY-ISOLATE,Milk
+MARTIAN-ALMOND-PROTEIN,Tree Nuts
+PULSAR-WHEAT-ISOLATE,Wheat
+martian-soy-powder,Soy
+plasma-cashew-concentrate,Tree Nuts
+vortex-soy-isolate,Soy
+cosmic-oat-powder,Oats
+cosmic-whey-extract,Milk
+Opal-Whey-Powder,Milk
+Martian-Almond-Protein,Tree Nuts
+Volcanic-Soy-Isolate,Soy
+pulsar-wheat-isolate,Wheat
+cyber-soy-protein,Soy
+opal-pistachio-powder,Pistachio
+aura-crustacean-isolate,Crustacean
+comet-almond-syrup,Almond
+comet-egg-oil,Egg
+hyper-whey-isolate,Milk
+comet-almond-syrup,Almond
+stellar-soy-extract,Soy
+stellar-peanut-concentrate,Peanut
+Quantum Soy Protein,Soy
+vortex-soy-extract,Soy
+comet-almond-syrup,Almond
+Aura Oat Lecithin,Oats
+Vortex Oat Gum,Oats
+Cosmic Whey Extract,Milk
+PLASMA_ALMOND_EXTRACT,Almond
+GLACIAL_SOY_GUM,Soy
+COMET_EGG_OIL,Egg
+comet-fish-oil,Fish
+cosmic-peanut-gum,Peanut
+Glacial Wheat Concentrate,Wheat
+Aura Whey Extract,Milk
+plasma-pistachio-powder,Tree Nuts
+Martian Barley Powder,Gluten
+Vortex Soy Isolate,Soy
+stellar-cashew-protein,Tree Nuts
+QUANTUM-SOY-PROTEIN,Soy
+VORTEX-OAT-GUM,Oat
+nebula-wheat-isolate,Wheat
+Glacial Soy Gum,Soy
+Hyper Cashew Powder,Tree Nuts
+Plasma-Cashew-Concentrate,Tree Nuts
+Nebula-Wheat-Isolate,Wheat
+Martian-Peanut-Lecithin,Peanuts
+Cosmic-Whey-Extract,Milk
+Nebula Wheat Isolate,Wheat
+Plasma Pistachio Gum,Pistachio
+ING-AURA-PNUT,Peanut
+ING-STEL-SOY,Soy
+ING-HYPR-WHEY,Milk
+glacial_soy_gum,Soy
+aura_peanut_powder,Peanut
+vortex_pistachio_concentrate,Pistachio
+ING-92705-01,Peanut
+ING-92705-02,Tree Nut
+ING-92705-04,Milk
+Asteroid Whey Protein,Milk
+Pulsar Almond Powder,Tree Nuts
+Opal Pistachio Powder,Pistachio
+Cosmic Oat Powder,Oat
+galactic_soy_isolate,Soy
+glacial_soy_gum,Soy
+CAS-STELLAR-SOY-EXTRACT,Soy
+CAS-VORTEX-SOY-ISOLATE,Soy
+Vortex Soy Extract,Soy
+Hyper Whey Isolate,Milk
+vortex-soy-isolate,Soy
+hyper-cashew-powder,Tree Nuts
+martian-egg-isolate,Egg
+hyper-oat-gum,Oats
+plasma_almond_extract,Tree Nuts
+ING_COSMIC_WHEY_EXTRACT,Milk
+ING_STELLAR_CASHEW_PROTEIN,Tree Nut
+glacial-wheat-concentrate,Wheat
+plasma-pistachio-powder,Pistachio
+Nebula Wheat Isolate,Wheat
+Opal Whey Powder,Milk
+martian_almond_protein,Tree Nuts
+volcanic-peanut-protein,Peanut
+galactic-soy-isolate,Soy
+Nebula-Almond-Extract,Almond
+Pulsar-Wheat-Isolate,Wheat
+Nebula Almond Extract,Tree Nut
+Aura Whey Extract,Milk
+Cyber-Soy-Protein,Soy
+Vortex-Oat-Gum,Oat
+martian-peanut-lecithin,Peanut
+cyber-lychee-oil,Lychee
+martian_egg_isolate,Egg
+glacial_almond_powder,Tree Nuts
+volcanic_soy_isolate,Soy
+opal_pistachio_powder,Tree Nuts
+aura_oat_lecithin,Gluten
+Cosmic Peanut Gum,Peanuts
+Aura Whey Extract,Milk
+STELLAR-PEANUT-CONCENTRATE,Peanut
+VORTEX-PISTACHIO-CONCENTRATE,Tree Nut
+pulsar-almond-powder,Tree Nuts
+pulsar-wheat-isolate,Wheat
+nebula_wheat_isolate,Wheat
+VORTEX_SOY_ISOLATE,Soy
+MARTIAN_BARLEY_POWDER,Gluten
+opal-whey-powder,Milk
+comet-egg-oil,Egg
+cosmic_whey_extract,Milk
+ING-HYPER-OAT-GUM,Gluten
+ING-COMET-ALMOND-SYRUP,Tree Nuts
+ING-HYPER-WHEY-ISOLATE,Milk
+martian-almond-protein,Almond
+volcanic-barley-extract,Barley
